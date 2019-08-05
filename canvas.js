@@ -20,7 +20,7 @@ Object.prototype.draw = function()
 }
 Object.prototype.update = function()
 {
-	if((this.y + this.radius) > c.height)
+	if((this.y + this.radius + this.dy) > c.height)
 	{
 		this.dy = -this.dy * friction;
 	}
